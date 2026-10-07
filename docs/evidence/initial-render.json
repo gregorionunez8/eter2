@@ -1,0 +1,118 @@
+{
+  "errors": [],
+  "render": {
+    "fps": 60,
+    "drawCalls": 0,
+    "triangles": 0,
+    "zoom": 20,
+    "player": {
+      "id": "5c673274-eb69-4eb0-92dd-e12323f8bd3f",
+      "name": "Vanguard 5c67",
+      "classId": "vanguard",
+      "x": 0,
+      "z": 17,
+      "level": 1,
+      "xp": 0,
+      "points": 0,
+      "stats": {
+        "strength": 22,
+        "agility": 15,
+        "vitality": 20,
+        "energy": 10
+      },
+      "hp": 110,
+      "mana": 45,
+      "crowns": 100,
+      "eter": 0,
+      "inventory": [
+        {
+          "uid": "4d3f2a61-9a88-44bd-b986-bd8b43cf289f",
+          "item": "health",
+          "x": 0,
+          "y": 0,
+          "durability": 0
+        },
+        {
+          "uid": "3778ef27-7374-482b-9f31-94482a290d13",
+          "item": "health",
+          "x": 1,
+          "y": 0,
+          "durability": 0
+        },
+        {
+          "uid": "a2e120e6-cfc6-4f14-8194-3dd289f217d6",
+          "item": "health",
+          "x": 2,
+          "y": 0,
+          "durability": 0
+        },
+        {
+          "uid": "232009ff-e320-4d31-98bc-45b45e491be8",
+          "item": "health",
+          "x": 3,
+          "y": 0,
+          "durability": 0
+        },
+        {
+          "uid": "89d08946-a725-40ef-8c64-3b89f0c4b16a",
+          "item": "mana",
+          "x": 4,
+          "y": 0,
+          "durability": 0
+        },
+        {
+          "uid": "53c9012b-f517-4e6d-89dd-3de2dbc3c736",
+          "item": "mana",
+          "x": 5,
+          "y": 0,
+          "durability": 0
+        },
+        {
+          "uid": "aaaf5d3d-31ad-48e7-a55f-d96977283605",
+          "item": "mana",
+          "x": 6,
+          "y": 0,
+          "durability": 0
+        }
+      ],
+      "equipment": {
+        "weapon": {
+          "uid": "2db0183b-64d7-41be-82ab-ed8338903202",
+          "item": "ironblade",
+          "x": 0,
+          "y": 0,
+          "durability": 80
+        },
+        "chest": {
+          "uid": "ab54ce93-f55d-47df-9235-a78b1bc6dc2b",
+          "item": "chest",
+          "x": 0,
+          "y": 0,
+          "durability": 100
+        },
+        "boots": {
+          "uid": "2d6c2ec9-8d80-4b03-809d-7461e9fc591e",
+          "item": "boots",
+          "x": 0,
+          "y": 0,
+          "durability": 60
+        }
+      },
+      "target": null,
+      "skill": "strike",
+      "facing": 3.141592653589793,
+      "motion": "idle",
+      "animationAt": 0,
+      "deadUntil": 0,
+      "npc": null,
+      "derived": {
+        "damage": 24,
+        "defense": 10,
+        "maxHP": 110,
+        "maxMana": 45,
+        "moveSpeed": 5.4,
+        "attackSpeed": 1.05
+      }
+    }
+  }
+}

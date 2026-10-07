@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "world": {
+    "id": "greenfields", "name": "Greenfields", "bounds": {"minX": -26, "maxX": 26, "minZ": -31, "maxZ": 30},
+    "spawn": {"x": 0, "z": 17}, "safeZone": {"minX": -14, "maxX": 14, "minZ": 7, "maxZ": 29},
+    "camera": {"height": 22, "offsetX": 18, "offsetZ": 24, "viewSize": 20, "minView": 16, "maxView": 25},
+    "landmarks": [
+      {"id":"crystal","name":"Aguja de Éter","style":"crystal","x":0,"z":22,"width":3,"depth":3,"height":4,"facing":0},
+      {"id":"forge","name":"Forja de Brom","style":"forge","x":-8,"z":16,"width":5.5,"depth":4.5,"height":4.8,"facing":0},
+      {"id":"market","name":"Mercado de Lyra","style":"market","x":7,"z":22,"width":4,"depth":4,"height":3.5,"facing":0},
+      {"id":"house1","name":"Casa del olmo","style":"house","x":-10.8,"z":25.6,"width":4.5,"depth":3.7,"height":4.2,"facing":0.1},
+      {"id":"house2","name":"Casa del camino","style":"house","x":9.5,"z":11.5,"width":4,"depth":4.3,"height":4,"facing":-0.15},
+      {"id":"wallwest","name":"Muro oeste","style":"wall","x":-8,"z":7,"width":10,"depth":1,"height":2.4,"facing":0},
+      {"id":"walleast","name":"Muro este","style":"wall","x":8,"z":7,"width":10,"depth":1,"height":2.4,"facing":0}
+    ]
+  },
+  "balance":{"xpBase":45,"xpExponent":1.65,"pointsPerLevel":5,"maxLevel":20,"crownsMultiplier":1,"eterChance":0.008,"lootOwnership":30,"lootLifetime":180,"movementMultiplier":1,"death":{"xpLoss":0.05,"crownsLoss":0,"respawnSeconds":3},"daylight":1},
+  "classes": [{"id":"vanguard","name":"Vanguard","enabled":true,"startingStats":{"strength":22,"agility":15,"vitality":20,"energy":10},"startingPoints":0,"startingHP":110,"startingMana":45,"moveSpeed":5.4,"attackSpeed":1.05,"startingWeapon":"ironblade","scaling":{"damage":0.7,"defense":0.2,"hp":3,"mana":2}}],
+  "skills": [
+    {"id":"strike","name":"Ataque","kind":"normal","damageMultiplier":1,"mana":0,"range":1.65,"radius":0,"windup":0.26,"recovery":0.68,"color":"#ead6a2"},
+    {"id":"cleave","name":"Hendidura","kind":"strong","damageMultiplier":2.1,"mana":8,"range":1.9,"radius":0,"windup":0.35,"recovery":0.9,"color":"#ffbe67"},
+    {"id":"sweep","name":"Arco de acero","kind":"aoe","damageMultiplier":1.35,"mana":12,"range":1.9,"radius":3.2,"windup":0.4,"recovery":1.05,"color":"#8ee7da"}
+  ],
+  "monsters": [
+    {"id":"sproutling","name":"Sproutling","style":"sproutling","level":1,"hp":68,"damage":6,"defense":2,"xp":16,"moveSpeed":2.6,"attackSpeed":1.5,"attackRange":1.3,"aggroRadius":0,"leash":9,"behavior":"passive","dropTable":"beginner"},
+    {"id":"forestwolf","name":"Forest Wolf","style":"forestwolf","level":3,"hp":138,"damage":13,"defense":5,"xp":34,"moveSpeed":3.9,"attackSpeed":1.25,"attackRange":1.45,"aggroRadius":6,"leash":12,"behavior":"aggressive","dropTable":"wolf"}
+  ],
+  "spots": [
+    {"id":"sprouts","name":"Claro del brote","map":"greenfields","monster":"sproutling","x":-4,"z":-2,"radius":3.6,"quantity":5,"respawn":7,"enabled":true},
+    {"id":"wolves","name":"Linde de los lobos","map":"greenfields","monster":"forestwolf","x":8,"z":-18,"radius":4,"quantity":4,"respawn":10,"enabled":true}
+  ],
+  "items": [
+    {"id":"crowns","name":"Crowns","type":"currency","model":"coins","icon":"coins","width":1,"height":1,"requirements":{},"damage":0,"defense":0,"durability":0,"classAffinity":[],"buyPrice":0,"sellPrice":0,"droppable":true,"tradeable":true,"properties":{}},
+    {"id":"eter","name":"Fragmento de Éter","type":"resource","model":"crystal","icon":"crystal","width":1,"height":1,"requirements":{},"damage":0,"defense":0,"durability":0,"classAffinity":[],"buyPrice":0,"sellPrice":0,"droppable":true,"tradeable":true,"properties":{}},
+    {"id":"health","name":"Poción de salud","type":"consumable","model":"redflask","icon":"health","width":1,"height":1,"requirements":{},"damage":0,"defense":0,"durability":0,"classAffinity":[],"buyPrice":12,"sellPrice":3,"droppable":true,"tradeable":true,"properties":{"restoreHP":65}},
+    {"id":"mana","name":"Poción de maná","type":"consumable","model":"blueflask","icon":"mana","width":1,"height":1,"requirements":{},"damage":0,"defense":0,"durability":0,"classAffinity":[],"buyPrice":15,"sellPrice":4,"droppable":true,"tradeable":true,"properties":{"restoreMana":45}},
+    {"id":"ironblade","name":"Espada de vigilia","type":"weapon","model":"sword","icon":"sword","width":1,"height":3,"requirements":{"strength":20},"damage":9,"defense":0,"durability":80,"classAffinity":["vanguard"],"buyPrice":65,"sellPrice":18,"droppable":true,"tradeable":true,"properties":{}},
+    {"id":"chest","name":"Coraza de caminante","type":"chest","model":"chest","icon":"chest","width":2,"height":2,"requirements":{"strength":20},"damage":0,"defense":5,"durability":100,"classAffinity":["vanguard"],"buyPrice":0,"sellPrice":20,"droppable":true,"tradeable":true,"properties":{}},
+    {"id":"boots","name":"Botas de caminante","type":"boots","model":"boots","icon":"boots","width":2,"height":1,"requirements":{},"damage":0,"defense":2,"durability":60,"classAffinity":["vanguard"],"buyPrice":0,"sellPrice":10,"droppable":true,"tradeable":true,"properties":{}}
+  ],
+  "dropTables": [
+    {"id":"beginner","name":"Botín del claro","entries":[{"item":"crowns","chance":0.9,"min":5,"max":13,"monsters":[],"enabled":true},{"item":"health","chance":0.16,"min":1,"max":1,"monsters":[],"enabled":true},{"item":"ironblade","chance":0.035,"min":1,"max":1,"monsters":[],"enabled":true},{"item":"eter","chance":0.008,"min":1,"max":1,"monsters":[],"enabled":true}]},
+    {"id":"wolf","name":"Botín de la linde","entries":[{"item":"crowns","chance":0.95,"min":10,"max":23,"monsters":[],"enabled":true},{"item":"health","chance":0.2,"min":1,"max":1,"monsters":[],"enabled":true},{"item":"ironblade","chance":0.06,"min":1,"max":1,"monsters":[],"enabled":true},{"item":"eter","chance":0.018,"min":1,"max":1,"monsters":[],"enabled":true}]}
+  ],
+  "npcs": [
+    {"id":"brom","name":"Brom","style":"blacksmith","x":-4.5,"z":16,"facing":1.5,"role":"Herrero","dialogue":"Una buena hoja te trae de vuelta. ¿Qué necesitas, Vanguard?","interaction":"shop","enabled":true,"services":["repair"],"shop":[{"item":"ironblade","price":65,"order":0,"category":"Armas"}]},
+    {"id":"lyra","name":"Lyra","style":"merchant","x":4.2,"z":18,"facing":-1.5,"role":"Provisiones","dialogue":"Más allá de la puerta, lleva siempre una poción de sobra.","interaction":"shop","enabled":true,"services":[],"shop":[{"item":"health","price":12,"order":0,"category":"Pociones"},{"item":"mana","price":15,"order":1,"category":"Pociones"}]}
+  ]
+}
